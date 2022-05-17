@@ -1,0 +1,128 @@
+nav{
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+
+body{
+    height:100vh;
+    overflow-y:hidden;
+}
+
+.main{
+
+    width: 100vw;
+    display: flex;
+    flex-direction:column ;
+}
+
+.upper-section{
+    text-align: center;
+    font-size: 250%;
+    margin-bottom:0.5%;
+    color: #0E4DAC;
+}
+
+.section {
+    height:513px;
+    max-width: 1119px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin-left:auto ;
+    margin-right: auto;
+    display: flex;
+    justify-self:center;
+    flex-direction: column;
+}
+
+.middle-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-self: center;
+    height: 70%;
+    width: 100%;
+}
+
+.line {
+    width: 401px;
+    height: 0px;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    transform: rotate(90deg);
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.content1{
+
+    display: grid;
+    border-right: 3px solid black;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+}
+
+.content2{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+select{
+    max-height: 30px;
+    max-width:15rem;
+    width:auto;
+    margin-left: 10%;
+    background-image: linear-gradient(to bottom, #c4c4c4, #cacaca, #d0d0d0, #d7d7d7, #dddddd, #dddddd, #dddddd, #dddddd, #d7d7d7, #d0d0d0, #cacaca, #c4c4c4);
+    border-radius: 5px;
+}
+
+.box label{
+    text-align:start;
+    margin-left:20% ;
+}
+
+button{
+    background-color: #000000;
+}
+
+
+.top-box{
+    height: 15%;
+}
+
+.lower-box{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.erase-btn, .logout-btn, .proceed-btn{
+    background-color: #12428A;
+    padding: 1rem 3rem;
+    color: white;
+}
+
+i{
+    color: white;
+}
+
+.lower-btn{
+    display: flex;
+    justify-content: space-between;
+}
+

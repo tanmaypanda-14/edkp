@@ -1,40 +1,30 @@
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import { useState } from "react";
-import { signOut } from "firebase/auth";
-import { auth } from "./fbconfig";
+
+import './App.css';
+import Otp from './Otp/Otp.js';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import {useState} from "react";
+import SignIn from './SignIn.js';
+import UserDetails from './UserDetails';
+import CertificateList from './CertificateList';
 
 function App() {
-  const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
-
-  const signUserOut = () => {
-    signOut(auth).then(() => {
-      localStorage.clear();
-      setIsAuth(false);
-      window.location.pathname = "/login";
-    });
-  };
-
+  const [username, setUsername] = useState("ABC")
   return (
+    <>
     <Router>
-      <nav>
-        <Link to="/"> Home </Link>
-
-        {!isAuth ? (
-          <Link to="/login"> Login </Link>
-        ) : (
-          <>
-            <button onClick={signUserOut}> Log Out</button>
-          </>
-        )}
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home isAuth={isAuth} />} />
-        <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
-      </Routes>
+    <Routes>
+    <Route exact path="/" element={<SignIn/>} />
+    <Route exact path="/otp" element={<Otp/>}/>
+    <Route exact path="/user-details" element={<UserDetails username={username} />}/>
+    <Route exact path="/certificate-list" element={<CertificateList username={username} />}/>
+    </Routes>
     </Router>
+    </>
   );
 }
 

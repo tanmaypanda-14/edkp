@@ -1,0 +1,117 @@
+.otp .blue-box{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+    background: #12428A;
+    }
+
+.otp .logo{
+    height: 58px;
+    width: auto;
+    margin-left: 115px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.otp .logo-txt{
+    max-width: 140px;
+    margin-left: 2%;
+    color: #ffff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;   
+}
+
+.otp body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+.otp .container{
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	align-items: space-around;
+	justify-content: center;
+}
+
+.otp .userInput{
+	display: flex;
+	justify-content: center;
+}
+
+.otp input{
+	margin: 30px;
+    width: 83px;
+    height: 76px;
+	text-align: center;
+	font-family: arimo;
+	font-size: 1.2rem;
+    background: #FFFFFF;
+    border: 1px solid #12428A;
+    box-sizing: border-box;
+}
+
+
+.otp .lock-img {
+    width: 75px;
+    height:76px;
+    align-self: center;
+}
+
+
+.otp p{
+    align-self: center;
+    max-width: 550px;
+    text-align: center;
+
+    width: 722px;
+    height: 48px;
+    left: 277px;
+    top: 242px;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.otp button{
+    width: 237px;
+    height: 78px;
+    /* left: 522px;
+    top: 497px; */
+
+    background: #12428A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	margin: 25px auto 0px auto;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	cursor: pointer;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFFFFF;
+
+
+
+}
+
+.verify {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,110 @@
+.SignIn{
+    height: 100vh;
+}
+
+.SigIn .body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+
+.SignIn .container{
+
+    position: absolute;
+    width: 1163px;
+    height: 606px;
+    left: calc(50% - 1163px/2 + 12.5px);
+    bottom: 57px;
+
+    box-sizing: border-box;
+}
+
+
+
+.SignIn button{
+
+    position: absolute;
+    width: 239px;
+    height: 88px;
+    left: 785px;
+    top: 427px;
+
+    background: #12428A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	margin: 25px auto 0px auto;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	cursor: pointer;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.SignIn input {
+
+    position: absolute;
+    width: 393px;
+    height: 24px;
+    left: 708px;
+    top: 315px;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom-width:3px ;
+    border-bottom-color: #12428A ;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.SignIn #logo {
+
+position: absolute;
+width: 241px;
+height: 233px;
+left: 782px;
+top: 20px;
+}
+
+.SignIn #computer-icon{
+
+    position: absolute;
+    width: 300px;
+    height: 337px;
+    margin-left:50px;
+    top: 171px;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+.SignIn input::-webkit-outer-spin-button,
+.SignIn input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.SignIn input[type=number] {
+  -moz-appearance: textfield;
+}
+

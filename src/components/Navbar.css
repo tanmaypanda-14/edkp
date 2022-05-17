@@ -1,0 +1,40 @@
+html{
+    margin: 0px;
+    padding: 0px;
+}
+
+.blue-box{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 58px;
+    background: #12428A;
+    }
+
+.logo{
+    height: 58px;
+    width: auto;
+    margin-left: 115px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.logo-txt{
+    max-width: 140px;
+    margin-left: 2%;
+    color: #ffff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;   
+}
+
+.userPic{
+    margin-left:50%;
+    display: flex;
+}
+
+#userimage{
+    height: 58px;
+    width: auto;
+}

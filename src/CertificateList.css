@@ -1,0 +1,93 @@
+.table-top ul{
+    display: grid;
+    grid-template-columns: .5fr 4fr 1fr 1fr 1fr 1fr;
+    max-width: 100vw;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px;
+}
+
+
+nav{
+    margin: 0px;
+}
+
+
+.table-top{
+    background-image: linear-gradient(to bottom, #c4c4c4, #cacaca, #d0d0d0, #d7d7d7, #dddddd, #dddddd, #dddddd, #dddddd, #d7d7d7, #d0d0d0, #cacaca, #c4c4c4);
+    margin-top: 0px;
+    height: 2rem;
+}
+
+.cert-list1{
+    height: 4rem;
+    display: grid;
+    grid-template-columns: .5fr 4fr 1fr 1fr 1fr 1fr;
+    max-width: 100vw;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px;
+}
+.cert-list1 li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.cert-list1 .preview button img {
+    width: 2rem;
+    height: auto;
+}
+.cert-list1 .preview button {
+    background: transparent;
+    border: none;
+    margin-left:10%;
+}
+
+.cert-list1 .quantity button{
+    border-radius: 50%;
+}
+
+
+.cert-list1 .quantity input {
+    width: 20%;
+    margin: 0px 5%;
+}
+
+.cert-list2{
+    height: 4rem;
+    display: grid;
+    grid-template-columns: .5fr 4fr 1fr 1fr 1fr 1fr;
+    max-width: 100vw;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px;
+    background-image: linear-gradient(to bottom, #c4c4c4, #cacaca, #d0d0d0, #d7d7d7, #dddddd, #dddddd, #dddddd, #dddddd, #d7d7d7, #d0d0d0, #cacaca, #c4c4c4);
+}
+
+.cert-list2 li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.cert-list2 .preview button img {
+    width: 2rem;
+    height: auto;
+}
+.cert-list2 .preview button {
+    background: transparent;
+    border: none;
+    margin-left:10%;
+}
+
+.cert-list2 .quantity button{
+    border-radius: 50%;
+}
+
+
+.cert-list2 .quantity input {
+    width: 20%;
+    margin: 0px 5%;
+}
+
+.quantity button {
+    width: 20%;
+    height: auto;
+}
