@@ -1,6 +1,4 @@
-
 import './App.css';
-import Otp from './Otp/Otp.js';
 import {
   BrowserRouter as Router,
   Routes,
@@ -8,9 +6,10 @@ import {
   Link
 } from "react-router-dom";
 import {useState} from "react";
-import SignIn from './SignIn.js';
-import UserDetails from './UserDetails';
-import CertificateList from './CertificateList';
+import SignIn from './pages/SignIn';
+import Otp from './pages/Otp';
+import UserDetails from './pages/UserDetails';
+import CertificateList from './pages/CertificateList';
 
 function App() {
   const [username, setUsername] = useState("ABC")

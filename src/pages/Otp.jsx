@@ -1,11 +1,11 @@
 import React, { useState,useEffect,useRef } from "react";
-import pic from "../images/mitLogo.png"
-import pic1 from "../images/lock.png"
-import './otp.css'
+import pic from "../assets/mitLogo.png"
+import pic1 from "../assets/lock.png"
+import '../styles/Otp.css'
 import { useLocation } from "react-router-dom";
 import { Link,useNavigate } from "react-router-dom";
 import { getAuth, RecaptchaVerifier,signInWithPhoneNumber } from "firebase/auth";
-import app from "../firebase";
+import app from "../api/firebase";
 
 export default function Otp(){
     const history = useNavigate();

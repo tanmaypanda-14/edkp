@@ -1,5 +1,5 @@
-import Navbar from "./components/Navbar";
-import './UserDetails.css'
+import Navbar from "../components/NavBar";
+import '../styles/UserDetails.css'
 import PropTypes from 'prop-types';
 import { useState } from "react";
 import { Link,useNavigate } from "react-router-dom";

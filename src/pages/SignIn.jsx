@@ -1,28 +1,21 @@
 import React from "react";
-import './signIn.css'
-import computerIcon from "./images/computer.png"
-import logo from "./images/mitLogo.png"
+import '../styles/SignIn.css'
+import computerIcon from "../assets/computer.png"
+import logo from "../assets/mitLogo.png"
 import { Link,useNavigate } from "react-router-dom";
 import { getDatabase, ref, set, child, get } from 'firebase/database';
-import {app} from './firebase';
+import {app} from '../api/firebase';
 import {useState,useEffect} from 'react';
 import {Navigate} from 'react-router';
 import { getAuth, RecaptchaVerifier,signInWithPhoneNumber } from "firebase/auth";
 
-
-
-
 export default function SignIn(){
-     
     const history = useNavigate();
-    
     const[erp,seterp]= useState("");
-   
     const login_validate=  (e)=>{
         let flag=false;
         e.preventDefault();
         const db = getDatabase();
-        
         if(erp==='')
         {
             alert("ERP field cannot be empty");
@@ -40,17 +33,14 @@ export default function SignIn(){
                 catch(error){
                         alert(error.message);
                 }
-
             }
             else{
                 alert("Please enter a valid ERP");
                 history("/");
             }
-            
         })
     }
     return(
-        
         <>
         <div className="SignIn">
         <svg className="hero" width="926" height="720" viewBox="0 0 945 720" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +49,6 @@ export default function SignIn(){
             </svg>
         <img id="computer-icon" src={computerIcon} alt="icon" />
         <form onSubmit={login_validate}>
-        
         <div className="container" >
         <img id="logo" src={logo} alt="MIT Logo" />
         <input value={erp} onInput={e => seterp(e.target.value)} label='Enter your erp number'/>

@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import logo from "../images/mitLogo.png"
-import userPic from "../images/user.png"
-import './Navbar.css'
+import logo from "../assets/mitLogo.png"
+import userPic from "../assets/user.png"
+import '../styles/NavBar.css'
 
 export default function Navbar(props){
     return(

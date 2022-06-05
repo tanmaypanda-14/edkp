@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Navbar from "./components/Navbar";
-import './CertificateList.css';
-import previewImg from './images/preview.png'
+import Navbar from "../components/NavBar";
+import '../styles/CertificateList.css';
+import previewImg from '../assets/preview.png'
 import { type } from '@testing-library/user-event/dist/type';
 
 export class CertificateList extends Component {
